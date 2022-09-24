@@ -27,6 +27,7 @@
         android:id="@+id/inputusername"
         android:layout_width="349dp"
         android:layout_height="55dp"
+        android:textColor="@color/white"
         android:layout_marginStart="32dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
@@ -35,12 +36,12 @@
         android:drawableLeft="@drawable/ic_person"
         android:ems="10"
         android:hint="UserName"
-        android:textColorHint="@color/white"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
@@ -55,6 +56,7 @@
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:ems="10"
         android:hint="Email"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
@@ -67,12 +69,13 @@
         tools:text="Email" />
 
     <EditText
-        android:id="@+id/inputuserpassword"
+        android:id="@+id/inputuserPassword"
         android:layout_width="351dp"
         android:layout_height="52dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/input_bg"
         android:backgroundTintMode="add"
+        android:textColor="@color/white"
         android:drawableLeft="@drawable/ic_security"
         android:ems="10"
         android:hint="Password"
@@ -87,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputuseremail" />
 
     <Button
-        android:id="@+id/buttonlogin"
+        android:id="@+id/buttonregister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -99,10 +102,10 @@
         android:paddingBottom="10dp"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/inputuserpassword"
+        app:layout_constraintEnd_toEndOf="@+id/inputuserPassword"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputuserpassword"
-        app:layout_constraintTop_toBottomOf="@+id/inputuserpassword"
+        app:layout_constraintStart_toStartOf="@+id/inputuserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputuserPassword"
         app:layout_constraintVertical_bias="0.067" />
 
     <TextView
@@ -115,10 +118,10 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonlogin"
+        app:layout_constraintEnd_toEndOf="@+id/buttonregister"
         app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="@+id/buttonlogin"
-        app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+        app:layout_constraintStart_toStartOf="@+id/buttonregister"
+        app:layout_constraintTop_toBottomOf="@+id/buttonregister"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
